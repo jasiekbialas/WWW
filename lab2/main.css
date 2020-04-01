@@ -1,0 +1,146 @@
+body {
+    text-align: center;
+    margin: 0;
+    /* background-color: #e6fff7; */
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+    height: 80px;
+    font-size: 60px;
+    color: white
+    /* padding: 30; */
+}
+
+div {
+    position: relative;
+}
+
+#header {
+    display:inline-block;
+    background-color: #71e3bc;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+span {
+    /* width: 100px; */
+    display: inline-block;
+}
+
+#logo {
+    /* width: 20% */
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#logoimg {
+    width: 70px;
+}
+
+#page {
+    width: 80%;
+    /* padding: 10px; */
+}
+
+tr {
+    margin-top: 10;
+}
+
+th {
+    border-style: solid;
+    border-width: 3px;
+    border-collapse: separate;
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: #71e3bc;
+    color: white;
+
+}
+
+td {
+    /* border-style: solid; */
+    border-width: 1px;
+    border-collapse: collapse;
+    padding: 15px 15px;
+}
+
+table {
+    border-width: 2px;
+    width: 80%;
+    text-align: left;
+    margin: 2% 10%;
+    padding: 5px 15px;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+footer {
+    background-color: #1e88e5;
+    color:white;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+p {
+    width: 75%;
+    /* display: inline-block; */
+    /* display: inline; */
+    margin: 20px auto;
+}
+
+#pierwszy {
+    /* background-color: #e6fff7; */
+    border-style: solid;
+    border-color: #1e88e5;
+    padding: 20px;
+    /* border-radius: 15%; */
+    font-family: Georgia, serif;
+
+}
+
+#drugi {
+    position: relative;
+    font-family: Georgia, serif;
+}
+
+#trzeci {
+    width: 150px;
+    background-color: orange;
+    position: absolute;
+    top:60%;
+    left: 80%;
+    z-index: 1;
+
+    font-weight: 500;
+    color: white;
+}
+
+.placeimg {
+    width: 150px;
+}
+
+.info {
+    border-style: solid;
+    border-color: #1e88e5;
+    width: 75%;
+    margin: 15px auto;
+}
+li {
+    text-align: left;
+}
+
+#powrót {
+    background-color: #71e3bc;
+    color: white;
+    width: 75%;
+    margin: 15px auto
+    
+}
