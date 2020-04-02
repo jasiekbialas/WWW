@@ -1,0 +1,283 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 3fr 1fr;
+  grid-template-rows: 100px auto 30px;
+  grid-template-areas: 
+    "logo title title"
+    "menu main sidebar"
+    "footer footer footer";
+}
+
+.logo {
+    grid-column-start: logo-start;
+    grid-column-end: logo-end;
+    grid-row-start: logo-start;
+    grid-row-end: logo-end;
+
+    padding: 10px 30px;
+    background-color: #71e3bc;
+}
+
+.circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.title {
+    grid-column-start: title-start;
+    grid-column-end: title-end;
+    grid-row-start: title-start;
+    grid-row-end: title-end;
+    background-color: #71e3bc;
+    padding: 10px;
+}
+
+.title h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    margin: 20px;
+}
+
+.menu {
+    grid-column-start: menu-start;
+    grid-column-end: menu-end;
+    grid-row-start: menu-start;
+    grid-row-end: menu-end;
+
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: #64b5f6;
+    text-align: left;
+}
+
+.menu a:link {
+    text-decoration:none;
+    color: white;
+}
+
+.menu li {
+    color: white;
+}
+  
+.menu li a:visited {
+    color:white;
+}
+  
+.menu li a:hover {
+    color: #71e3bc;
+}
+  
+
+.main {
+    grid-column-start: main-start;
+    grid-column-end: main-end;
+    grid-row-start: main-start;
+    grid-row-end: main-end;
+
+    border-right: 2px solid #64b5f6;
+
+}
+
+.main p {
+    width: 75%;
+    margin: 20px auto;
+    font-family: Georgia, serif;
+}
+
+#pierwszy {
+    border-style: solid;
+    border-color: #1e88e5;
+    padding: 20px;
+}
+
+.main table {
+    border-width: 2px;
+    width: 80%;
+    text-align: left;
+    margin: 2% 10%;
+    padding: 5px 15px;
+}
+
+.main th {
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: #71e3bc;
+    color: white;
+
+}
+
+.main td {
+    padding: 15px 15px;
+}
+
+
+.sidebar {
+    grid-column-start: sidebar-start;
+    grid-column-end: sidebar-end;
+    grid-row-start: sidebar-start;
+    grid-row-end: sidebar-end;
+}
+
+.postponed {
+    padding: 15px 0;
+}
+
+.lateflight {
+    padding: 5px;
+    margin: 0;
+}
+
+.lateflight p{
+    margin: 5px;
+}
+
+.very-late {
+    background-color: #ffa50085;
+}
+
+.late {
+    background-color: #ffff004f;
+}
+
+.cancelled {
+    background-color:#ff00006e;
+}
+
+.reserve {
+    text-align: left;
+    padding: 10px;
+    border-top: 2px solid #64b5f6;
+}
+
+.reserve label{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.reserve h2 {
+    margin: 5px;
+}
+
+footer {
+    grid-column-start: footer-start;
+    grid-column-end: footer-end;
+    grid-row-start: footer-start;
+    grid-row-end: footer-end;
+
+    background-color: #1e88e5;
+    color:white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+
+.flightdetails img {
+    width: 100%;
+}
+
+.planedetails img {
+    width: 150px;
+}
+
+.boxed {
+    border-color: #1e88e5;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px 20px;
+    margin: 20px;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: white;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.passengers .passenger:nth-child(2n) {
+    color: #1e88e5;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-auto-rows: max-content;
+        grid-template-areas: 
+            "logo title"
+            "menu menu"
+            "menu menu"
+            "main main"
+            "sidebar sidebar"
+            "footer footer";
+    }
+  
+    .biginfo {
+      display: none;
+    } 
+}
+  
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-auto-rows: max-content;
+        grid-template-areas:
+            "logo title title"
+            "menu menu menu"
+            "menu menu menu"
+            "main main sidebar"
+            "footer footer footer";
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(0,0,0,0.5);
+}
+
+
+.overlay h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background-color: #71e3bc;
+    padding: 50px;
+    color: white;
+  }

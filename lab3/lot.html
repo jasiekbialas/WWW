@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista lotów</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+
+  <div class ="container">
+    <!-- <div class="header"> -->
+      <div class="logo">
+        <div class = "circle">
+          <img src="paper-plane.png" alt="logo" id="logoimg">
+        </div>
+      </div>
+
+      <div class="title">
+        <h1> lista lotów.</h1>
+      </div>
+    <!-- </div> -->
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">lista lotów</a></li>
+          <li><a href="https://www.care.com/c/stories/6094/101-facts-about-dogs-you-might-not-know/">o psach</a></li>
+          <li><a href="index.html">promocje</a></li>
+          <li><a href="index.html">o nas</a></li>
+          <li><a href="index.html">kontakt</a></li>
+          <li><a href="https://www.tripsavvy.com/fun-facts-about-llamas-3880940">o llamach</a></li>
+          <li>
+            <span>akcesoria</span>
+            <ul class="subnav">
+              <li><a href="index.html">krzesło</a></li>
+              <li><a href="index.html">opona</a></li>
+              <li><a href="index.html">pinezka</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
+      <div class="main">
+        <div class="flightdetails">
+          <table>
+              <tr>
+                  <th>nr</th>
+                  <th>skąd</th>
+                  <th>dokąd</th>
+                  <th>godzina</th>
+                  <th>czas lotu</th>
+                </tr>
+                <tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="https://pl.wikipedia.org/wiki/Chrcynno">Chrcyno</a></td>
+                  <td><a href="https://pl.wikipedia.org/wiki/Chrcynno">Chrcyno</a></td>
+                  <td>rano</td>
+                  <td>30 min</td>
+                </tr>
+                <tr class = "biginfo">
+                    <td></td>
+                    <td><img src="chrcyno.jpg" class = "placeimg"></td>
+                    <td><img src="chrcyno.jpg" class = "placeimg"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="biginfo">
+                    <th>przewidywana pogoda</th>
+                    <td>słonecznie</td>
+                    <td>słonecznie</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+          </table>
+        </div>
+        
+        <div class="planedetails boxed">
+            <h3>samolot</h3>
+            <p>typ: spitfire</p>
+            <p>ilość miejsc: 1 os</p>
+            <img src="spitfire.jpg" class = "placeimg">
+        </div>
+        
+        <div class="passengers boxed">
+            <h3>pasażerowie</h3>
+            <ul>
+                <li class ="passenger tooltip">
+                  Alexander Hamilton
+                  <span class="tooltiptext">przy sterze</span>
+                </li>
+                <li class ="passenger tooltip">
+                  Thomas Jefferson
+                  <span class="tooltiptext">bagażnik</span>
+                </li>
+                <li class ="passenger tooltip">
+                  Arthur Dent
+                  <span class="tooltiptext">lewe skrzydło</span>
+                </li>
+                <li class ="passenger tooltip">
+                  Zaratustra
+                  <span class="tooltiptext">prawe skrzydło</span>
+                </li>
+            </ul>
+        </div>
+
+      </div>
+
+      <div class="sidebar">
+        <div class="postponed">
+          <h2>opóźnione / odwołane loty</h2>
+          <div class = "lateflight very-late">
+            <p>Ziemia -> Magrathea </p>
+            <p><del>8:33 AM</del> 7:07 PM</p>
+          </div>
+
+          <div class = "lateflight late">
+            <p>Hogwart -> Dublin</p>
+            <p><del>niedługo</del> później</p>
+          </div>
+
+          <div class = "lateflight cancelled">
+            <p>Watykan -> Atlanta</p>
+            <p><del>wieczorem</del> nigdy</p>
+          </div>
+        </div>
+
+        <div class="reserve">
+          <h2>zarezerwuj lot!</23>
+          <form>
+            <label for="from">skąd:</label>
+            <select id="from" name="from">
+              <option value="Wwa">Wwa</option>
+              <option value="Chrcyno">Chrcyno</option>
+              <option value="Hogwart">Hogwart</option>
+              <option value="Ziemia">Ziemia</option>
+            </select><br>
+
+            <label for="to">dokąd:</label>
+            <select id="to" name="to">
+              <option value="Wwa">Wwa</option>
+              <option value="Chrcyno">Chrcyno</option>
+              <option value="Hogwart">Hogwart</option>
+              <option value="Ziemia">Ziemia</option>
+            </select><br>
+
+            <label for="to">data:</label>
+            <input type="date" id="date" name="date"><br>
+
+            <label for="first-name">imię:</label>
+            <input type="text" id="first-name" name="first-name"><br>
+
+            <label for="last-name">nazwisko:</label>
+            <input type="text" id="last-name" name="last-name"><br>
+
+            <input type="submit" value="Rezerwuj"/><br>
+            <input type="reset" value="Reset"/><br>
+          </form> 
+        </div>
+    </div>
+
+    <footer>
+        Jan Bialas
+    </footer>
+
+  </div>
+</body>
+</html>
